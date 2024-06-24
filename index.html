@@ -4,48 +4,63 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/cardview.css" />
-    </head>
-    <body>
-        <div class="container-md">
-            <div class="row align-items-center ui-row" id="login-button-row">
-                <button type="button" class="btn btn-primary btn-lg button-ui" id="mebory-login">ログイン</button>
-            </div>
-            <div class="alert alert-primary" id="bluespace" hidden>
-                <div class="ui-row" id="card-img-row">
-                </div>
-                <div class="row ui-row" id="title-desc-row">
-                    <p id="title-desc"></p>
-                </div>
-                <div class="row" id="point-row" hidden>
-                    <p>所持ポイント数： <span class="badge rounded-pill bg-primary" id="show-point"></span></p>
-                </div>
-            </div>
 
-            <div class="row align-items-center ui-row" id="stamp-row">
-                <div class="stamps-block" id="stamp-ui-block">
-                </div>
-            </div>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cardview.css" />
+</head>
 
-            <div class="row align-items-center ui-row" id="function-button-row" hidden>
-                <div class="btn-group" role="group" aria-label="Functions">
-                    <button type="button" class="btn btn-primary btn-sm" id="get-code" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">ワンタイムコード表示</button>
-                    <button type="button" class="btn btn-primary btn-sm" id="reload">リロード</button>
-                </div>
+<body>
+    <div class="container-md">
+        <div class="row align-items-center ui-row" id="login-button-row">
+            <button type="button" class="btn btn-primary btn-lg button-ui" id="mebory-login">ログイン</button>
+        </div>
+        <div class="alert alert-primary" id="bluespace" hidden>
+            <div class="ui-row" id="card-img-row">
+            </div>
+            <div class="row ui-row" id="title-desc-row">
+                <p id="title-desc"></p>
+            </div>
+            <div class="row" id="point-row" hidden>
+                <p>所持ポイント数： <span class="badge rounded-pill bg-primary" id="show-point"></span></p>
             </div>
         </div>
-        <button id='mebory-get-voucher' hidden>Get Voucher</button>
-        <div id="short-code-toast" class="toast align-items-center text-white bg-primary position-absolute top-50 start-50 translate-middle" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body" id="short-code-in-toast">
-                </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+
+        <div class="row align-items-center ui-row" id="stamp-row">
+            <div class="stamps-block" id="stamp-ui-block">
             </div>
         </div>
-    </body>
-    <script type="text/javascript" src="./dist/client_app.js"></script>
+
+        <div class="row align-items-center ui-row" id="function-button-row" hidden>
+            <div class="btn-group" role="group" aria-label="Functions">
+                <button type="button" class="btn btn-primary btn-sm" id="get-code" data-bs-container="body"
+                    data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">ワンタイムコード表示</button>
+                <button type="button" class="btn btn-primary btn-sm" id="reload">リロード</button>
+            </div>
+        </div>
+    </div>
+    <button id='mebory-get-voucher' hidden>Get Voucher</button>
+    <div id="short-code-toast"
+        class="toast align-items-center text-white bg-primary position-absolute top-50 start-50 translate-middle"
+        role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="short-code-in-toast">
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./dist/client_app.js"></script>
+
+<script type="module">
+    import bootstrap from 'bootstrap/dist/js/bootstrap.js';
+    import $ from 'jquery/dist/jquery.min.js';
+    import MeboryClient from 'local_lib/MeboryClient.js';
+
+    console.log('Modules imported successfully');
+</script>
+
 </html>
