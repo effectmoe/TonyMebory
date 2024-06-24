@@ -2,7 +2,7 @@ import './bootstrap/dist/js/bootstrap.js';
 import './jquery/dist/jquery.min.js';
 import './local_lib/MeboryClient.js';
 
-let meboryClient = new MeboryClient('C_34e7fe65-018f-1000-a264-c7691938a0f2', 'mebory-login', 'https://login.mebory.com');
+const meboryClient = new MeboryClient('C_34e7fe65-018f-1000-a264-c7691938a0f2', 'mebory-login', 'https://login.mebory.com');
 
 const removeAllChildElementsById = (id) => {
     const element = document.getElementById(id);
@@ -33,17 +33,17 @@ meboryClient.afterLogin = () => {
     if (meboryClient.mebory['titleUITemplete'] !== 1 && meboryClient.mebory['titleUITemplete'] !== 3) {
         document.getElementById("point-row").hidden = false;
         meboryClient.getPoint(
-                function () {},
-                function () {},
-                (point) => {
-            $('#show-point').text(point);
-        });
+            function () { },
+            function () { },
+            (point) => {
+                $('#show-point').text(point);
+            });
         meboryClient.getVoucher(
-            function () {},
-            function () {},
+            function () { },
+            function () { },
             (data) => {
-        console.log(data);
-    });
+                console.log(data);
+            });
     } else {
         document.getElementById("point-row").hidden = true;
     }
@@ -51,36 +51,36 @@ meboryClient.afterLogin = () => {
     if (meboryClient.mebory['titleUITemplete'] === 3) {
         removeAllChildElementsById('stamp-ui-block');
         meboryClient.getStamp(
-                function () {},
-                function () {},
-                (stamp) => {
-            var total = 0;
-            var stampped = 0;
-            stamp.forEach(
+            function () { },
+            function () { },
+            (stamp) => {
+                var total = 0;
+                var stampped = 0;
+                stamp.forEach(
                     (element) => {
-                total++;
-                var imgSrc = 'images/defaultstamp.png';
-                if (element.eventVisualConcept !== '') {
-                    imgSrc = meboryClient.title_event_visual_concept_by_id(element.eventBelongTo, element.eventId);
-                }
-                if (element.id !== '0') {
-                    var stampImg = $('<img>').attr({
-                        class: 'filled-stamp-slot',
-                        src: imgSrc,
-                        alt: 'スタンプ'
-                    });
-                    stampImg.appendTo('#stamp-ui-block');
-                } else {
-                    var stampImg = $('<img>').attr({
-                        class: 'empty-stamp-slot',
-                        src: imgSrc,
-                        alt: 'スタンプ'
-                    });
-                    stampImg.appendTo('#stamp-ui-block');
-                }
-            }
-            );
-        });
+                        total++;
+                        var imgSrc = 'images/defaultstamp.png';
+                        if (element.eventVisualConcept !== '') {
+                            imgSrc = meboryClient.title_event_visual_concept_by_id(element.eventBelongTo, element.eventId);
+                        }
+                        if (element.id !== '0') {
+                            var stampImg = $('<img>').attr({
+                                class: 'filled-stamp-slot',
+                                src: imgSrc,
+                                alt: 'スタンプ'
+                            });
+                            stampImg.appendTo('#stamp-ui-block');
+                        } else {
+                            var stampImg = $('<img>').attr({
+                                class: 'empty-stamp-slot',
+                                src: imgSrc,
+                                alt: 'スタンプ'
+                            });
+                            stampImg.appendTo('#stamp-ui-block');
+                        }
+                    }
+                );
+            });
     }
 };
 
@@ -101,14 +101,14 @@ meboryClient.refresh();
 
 document.getElementById("get-code").onclick = function () {
     meboryClient.getCode(
-            function () {},
-            function () {},
-            (code) => {
-        console.log('Code => ' + code);
-        document.getElementById("short-code-in-toast").innerHTML = code;
-        const toast = new bootstrap.Toast('#short-code-toast');
-        toast.show();
-    });
+        function () { },
+        function () { },
+        (code) => {
+            console.log('Code => ' + code);
+            document.getElementById("short-code-in-toast").innerHTML = code;
+            const toast = new bootstrap.Toast('#short-code-toast');
+            toast.show();
+        });
 };
 
 document.getElementById("reload").onclick = function () {
@@ -117,9 +117,9 @@ document.getElementById("reload").onclick = function () {
 
 document.getElementById("mebory-get-voucher").onclick = function () {
     meboryClient.getVoucher(
-            function () {},
-            function () {},
-            (data) => {
-        console.log(data);
-    });
+        function () { },
+        function () { },
+        (data) => {
+            console.log(data);
+        });
 };
