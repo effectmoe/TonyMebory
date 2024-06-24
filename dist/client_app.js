@@ -2,7 +2,7 @@ import './bootstrap/dist/js/bootstrap.js';
 import './jquery/dist/jquery.min.js';
 import './local_lib/MeboryClient.js';
 
-let meboryClient = new MeboryClient('C_34e7fe65-018f-1000-a264-c7691938a0f2', 'mebory-login', 'https://login.mebory.com');
+const meboryClient = new MeboryClient('C_34e7fe65-018f-1000-a264-c7691938a0f2', 'mebory-login', 'https://login.mebory.com');
 
 const removeAllChildElementsById = (id) => {
     const element = document.getElementById(id);
