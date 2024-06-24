@@ -1,0 +1,44 @@
+.ui-row{
+    padding-top: 36px;
+}
+.cardimg {
+    border: solid 0px #555;
+    background-color: #eed;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stamps-block {
+    margin: auto;
+    width : 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    display: block;
+}
+
+.stamps-block > img {
+    border-radius: 6px;
+    margin: 5px;
+    width: 90px;
+}
+
+.filled-stamp-slot{
+    border: 2px solid silver;
+}
+.empty-stamp-slot{
+    opacity:0.3;
+    border: 2px dashed silver;
+}
+
+.center-aligned-p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
