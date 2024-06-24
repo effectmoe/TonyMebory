@@ -1,5 +1,5 @@
 import bootstrap from './bootstrap/dist/js/bootstrap.js';
-import bootstrap from './bootstrap/dist/css/bootstrap.css';
+
 import $ from './jquery/dist/jquery.min.js';
 import MeboryClient from './local_lib/MeboryClient.js';
 
