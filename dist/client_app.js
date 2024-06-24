@@ -1,6 +1,6 @@
 import bootstrap from './bootstrap/dist/js/bootstrap.js';
-
-import $ from './jquery/dist/jquery.min.js';
+import './bootstrap/dist/css/bootstrap.css';
+import './jquery/dist/jquery.min.js';
 import MeboryClient from './local_lib/MeboryClient.js';
 
 let meboryClient = new MeboryClient('C_34e7fe65-018f-1000-a264-c7691938a0f2', 'mebory-login', 'https://login.mebory.com');
