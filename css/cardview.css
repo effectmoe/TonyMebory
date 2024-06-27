@@ -1,5 +1,6 @@
 .ui-row{
-    padding-top: 36px;
+    /* padding-top: 36px; */
+    padding-top: 0px;
 }
 .cardimg {
     border: solid 0px #555;
