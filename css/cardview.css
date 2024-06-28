@@ -1,7 +1,8 @@
-.ui-row{
+.ui-row {
     /* padding-top: 36px; */
     padding-top: 0px;
 }
+
 .cardimg {
     border: solid 0px #555;
     background-color: #eed;
@@ -18,70 +19,73 @@
 
 .stamps-block {
     margin: auto;
-    width : 300px;
+    width: 300px;
     display: grid;
     grid-template-columns: 100px 100px 100px;
     display: block;
 }
 
-.stamps-block > img {
+.stamps-block>img {
     border-radius: 6px;
     margin: 5px;
     width: 90px;
 }
 
-.filled-stamp-slot{
+.filled-stamp-slot {
     border: 2px solid silver;
 }
-.empty-stamp-slot{
-    opacity:0.3;
+
+.empty-stamp-slot {
+    opacity: 0.3;
     border: 2px dashed silver;
 }
 
-.center-aligned-p{
+.center-aligned-p {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#get-code{
+#get-code {
     background-color: #8f7070;
 }
 
-#reload{
+#reload {
     background-color: #917C7C;
 }
 
-#logout{
+#logout {
     background-color: #6f6862;
 }
 
 .btn-primary {
-    --bs-btn-bg:transparent!important;
-    --bs-btn-border-color: transparent!important;
-    --bs-btn-hover-border-color: transparent!important;
-    --bs-btn-active-border-color: transparent!important;
-    --bs-btn-disabled-border-color: transparent!important;
-    --bs-btn-disabled-bg: transparent!important;
-    --bs-btn-active-bg: transparent!important;
-    --bs-btn-hover-bg: transparent!important;
+    --bs-btn-bg: transparent !important;
+    --bs-btn-border-color: transparent !important;
+    --bs-btn-hover-border-color: transparent !important;
+    --bs-btn-active-border-color: transparent !important;
+    --bs-btn-disabled-border-color: transparent !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-active-bg: transparent !important;
+    --bs-btn-hover-bg: transparent !important;
 }
-.btn-primary:focus,
-.btn-primary:active {
-  outline: none !important;
+
+.btn-primary:focus {
+    outline: 2px solid #8f7070;
+    box-shadow: 0 0 0 0.2rem rgba(#8f7070, 0.25);
 }
 
 .btn-danger {
-    --bs-btn-bg:transparent!important;
-    --bs-btn-border-color: transparent!important;
-    --bs-btn-hover-border-color: transparent!important;
-    --bs-btn-active-border-color: transparent!important;
-    --bs-btn-disabled-border-color: transparent!important;
-    --bs-btn-disabled-bg: transparent!important;
-    --bs-btn-active-bg: transparent!important;
-    --bs-btn-hover-bg: transparent!important;
+    --bs-btn-bg: transparent !important;
+    --bs-btn-border-color: transparent !important;
+    --bs-btn-hover-border-color: transparent !important;
+    --bs-btn-active-border-color: transparent !important;
+    --bs-btn-disabled-border-color: transparent !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-active-bg: transparent !important;
+    --bs-btn-hover-bg: transparent !important;
 }
-.btn-danger:focus,
-.btn-danger:active {
-  outline: none !important;
+
+.btn-primary:focus {
+    outline: 2px solid #6f6862;
+    box-shadow: 0 0 0 0.2rem rgba(#6f6862, 0.25);
 }
