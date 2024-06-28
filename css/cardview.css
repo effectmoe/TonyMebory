@@ -65,6 +65,8 @@
     --bs-btn-disabled-bg: transparent!important;
     --bs-btn-active-bg: transparent!important;
     --bs-btn-hover-bg: transparent!important;
+    outline: none;
+
 }
 
 .btn-danger {
@@ -76,4 +78,6 @@
     --bs-btn-disabled-bg: transparent!important;
     --bs-btn-active-bg: transparent!important;
     --bs-btn-hover-bg: transparent!important;
+    outline: none;
+
 }
