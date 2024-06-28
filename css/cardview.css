@@ -44,6 +44,14 @@
     margin-right: auto;
 }
 
+#get-code{
+    background-color: #c78181;
+}
+
 #reload{
     background-color: #917C7C;
+}
+
+#rlogout{
+    background-color: #4C595E;
 }
