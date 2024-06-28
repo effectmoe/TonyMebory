@@ -65,8 +65,10 @@
     --bs-btn-disabled-bg: transparent!important;
     --bs-btn-active-bg: transparent!important;
     --bs-btn-hover-bg: transparent!important;
-    outline: none;
-
+}
+.btn-primary:focus,
+.btn-primary:active {
+  outline: none !important;
 }
 
 .btn-danger {
@@ -78,6 +80,8 @@
     --bs-btn-disabled-bg: transparent!important;
     --bs-btn-active-bg: transparent!important;
     --bs-btn-hover-bg: transparent!important;
-    outline: none;
-
+}
+.btn-danger:focus,
+.btn-danger:active {
+  outline: none !important;
 }
