@@ -58,8 +58,10 @@
 
 .btn-primary {
     --bs-btn-border-color: transparent!important;
+    --bs-btn-hover-border-color: transparent!important;
 }
 
 .btn-danger {
     --bs-btn-border-color: transparent!important;
+    --bs-btn-hover-border-color: transparent!important;
 }
