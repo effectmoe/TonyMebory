@@ -61,6 +61,9 @@
     --bs-btn-hover-border-color: transparent!important;
     --bs-btn-active-border-color: transparent!important;
     --bs-btn-disabled-border-color: transparent!important;
+    --bs-btn-disabled-bg: transparent!important;
+    --bs-btn-active-bg: transparent!important;
+    --bs-btn-hover-bg: transparent!important;
 }
 
 .btn-danger {
@@ -68,4 +71,7 @@
     --bs-btn-hover-border-color: transparent!important;
     --bs-btn-active-border-color: transparent!important;
     --bs-btn-disabled-border-color: transparent!important;
+    --bs-btn-disabled-bg: transparent!important;
+    --bs-btn-active-bg: transparent!important;
+    --bs-btn-hover-bg: transparent!important;
 }
