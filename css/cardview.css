@@ -55,3 +55,11 @@
 #logout{
     background-color: #4C595E;
 }
+
+.btn-primary {
+    --bs-btn-border-color: none;
+}
+
+.btn-danger {
+    --bs-btn-border-color: none;
+}
