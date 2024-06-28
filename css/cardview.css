@@ -61,5 +61,5 @@
 }
 
 .btn-danger {
-    --bs-btn-border-color: transparent;
+    --bs-btn-border-color: transparent!important;
 }
