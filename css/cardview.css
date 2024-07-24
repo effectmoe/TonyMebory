@@ -1,8 +1,6 @@
-.ui-row {
-    /* padding-top: 36px; */
-    padding-top: 0px;
+.ui-row{
+    padding-top: 36px;
 }
-
 .cardimg {
     border: solid 0px #555;
     background-color: #eed;
@@ -19,73 +17,67 @@
 
 .stamps-block {
     margin: auto;
-    width: 300px;
+    width : 300px;
     display: grid;
     grid-template-columns: 100px 100px 100px;
     display: block;
 }
 
-.stamps-block>img {
+.stamps-block > img {
     border-radius: 6px;
     margin: 5px;
     width: 90px;
 }
 
-.filled-stamp-slot {
+.filled-stamp-slot{
     border: 2px solid silver;
 }
-
-.empty-stamp-slot {
-    opacity: 0.3;
+.empty-stamp-slot{
+    opacity:0.3;
     border: 2px dashed silver;
 }
 
-.center-aligned-p {
+.center-aligned-p{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#get-code {
-    background-color: #8f7070;
+/* Style the buttons that are used to open and close the accordion panel */
+.mebory-ui-accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
-#reload {
-    background-color: #917C7C;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .mebory-ui-accordion:hover {
+  background-color: #ccc;
 }
 
-#logout {
-    background-color: #6f6862;
+/* Style the accordion panel. Note: hidden by default */
+.mebory-ui-accordion-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-.btn-primary {
-    --bs-btn-bg: transparent !important;
-    --bs-btn-border-color: transparent !important;
-    --bs-btn-hover-border-color: transparent !important;
-    --bs-btn-active-border-color: transparent !important;
-    --bs-btn-disabled-border-color: transparent !important;
-    --bs-btn-disabled-bg: transparent !important;
-    --bs-btn-active-bg: transparent !important;
-    --bs-btn-hover-bg: transparent !important;
+.mebory-ui-accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
 
-.btn-primary:focus {
-    outline: 2px solid #8f7070;
-    box-shadow: 0 0 0 0.2rem rgba(#8f7070, 0.25);
-}
-
-.btn-danger {
-    --bs-btn-bg: transparent !important;
-    --bs-btn-border-color: transparent !important;
-    --bs-btn-hover-border-color: transparent !important;
-    --bs-btn-active-border-color: transparent !important;
-    --bs-btn-disabled-border-color: transparent !important;
-    --bs-btn-disabled-bg: transparent !important;
-    --bs-btn-active-bg: transparent !important;
-    --bs-btn-hover-bg: transparent !important;
-}
-
-.btn-primary:focus {
-    outline: 2px solid #6f6862;
-    box-shadow: 0 0 0 0.2rem rgba(#6f6862, 0.25);
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
