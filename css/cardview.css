@@ -57,7 +57,12 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .mebory-ui-accordion:hover {
+.mebory-ui-accordion:hover {
+  background-color: #ccc;
+}
+
+
+.mebory-ui-accordion:active {
   background-color: #ccc;
 }
 
@@ -70,7 +75,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-.mebory-ui-accordion:after {
+.mebory-ui-accordion::after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
@@ -78,6 +83,6 @@
   margin-left: 5px;
 }
 
-.active:after {
+.mebory-ui-accordion.active::after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
