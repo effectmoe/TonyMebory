@@ -87,6 +87,15 @@
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+/* mebory ユーザー情報背景色 */
+.mebory-ui-accordion-panel{
+background-color: transparent!important;
+}
+
+/* mebory  情報を発行元に共有する フォント色 */
+.form-check-label{
+  color:white!important;
+}
 
 /* meboryボタン色変更 */
 .btn-primary#get-code {
@@ -112,7 +121,3 @@
 }
 
 
-.mebory-ui-accordion.active::after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
-}
