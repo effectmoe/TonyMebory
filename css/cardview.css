@@ -1,46 +1,48 @@
-.ui-row{
-    padding-top: 36px;
+.ui-row {
+  padding-top: 36px;
 }
+
 .cardimg {
-    border: solid 0px #555;
-    background-color: #eed;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  border: solid 0px #555;
+  background-color: #eed;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stamps-block {
-    margin: auto;
-    width : 300px;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    display: block;
+  margin: auto;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  display: block;
 }
 
-.stamps-block > img {
-    border-radius: 6px;
-    margin: 5px;
-    width: 90px;
+.stamps-block>img {
+  border-radius: 6px;
+  margin: 5px;
+  width: 90px;
 }
 
-.filled-stamp-slot{
-    border: 2px solid silver;
-}
-.empty-stamp-slot{
-    opacity:0.3;
-    border: 2px dashed silver;
+.filled-stamp-slot {
+  border: 2px solid silver;
 }
 
-.center-aligned-p{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.empty-stamp-slot {
+  opacity: 0.3;
+  border: 2px dashed silver;
+}
+
+.center-aligned-p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -76,7 +78,8 @@
 }
 
 .mebory-ui-accordion::after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
   float: right;
@@ -84,44 +87,49 @@
 }
 
 .mebory-ui-accordion.active::after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 /* mebory ユーザー情報背景色 */
-.mebory-ui-accordion-panel{
-background-color: transparent!important;
+.mebory-ui-accordion-panel {
+  background-color: transparent !important;
 }
 
 /* mebory  情報を発行元に共有する フォント色 */
-.form-check-label{
-  color:white!important;
+.form-check-label {
+  color: white !important;
 }
 
 /* meboryボタン色変更 */
 .btn-primary#get-code {
-  --bs-btn-color: #fff!important;
-  --bs-btn-bg: #938A7C!important;
-  --bs-btn-border-color: transparent!important;
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #938A7C !important;
+  --bs-btn-border-color: transparent !important;
 }
+
 .btn-primary#reload {
-  --bs-btn-color: #fff!important;
-  --bs-btn-bg: #7a7266!important;
-  --bs-btn-border-color: transparent!important;
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #7a7266 !important;
+  --bs-btn-border-color: transparent !important;
 }
+
 .btn-danger {
-  --bs-btn-color: #fff!important;
-  --bs-btn-bg: #81262f!important;
-  --bs-btn-border-color: transparent!important;
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #81262f !important;
+  --bs-btn-border-color: transparent !important;
 }
+
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #717d8f!important;
-  --bs-btn-border-color: transparent!important;
+  --bs-btn-color: #fff!important;
+  --bs-btn-bg: #7f8286 !important;
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-bg: #a1a1a2!important;
+  --bs-btn-hover-border-color: transparent !important;
 }
+
 
 /* ユーザー情報設定タブ　調整 */
 .mebory-ui-accordion {
   margin-bottom: 20px;
 }
-
-
