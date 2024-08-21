@@ -121,11 +121,13 @@
 }
 
 .btn-primary {
-  --bs-btn-color: #fff!important;
+  --bs-btn-color: #fff !important;
   --bs-btn-bg: #7f8286 !important;
   --bs-btn-border-color: transparent !important;
-  --bs-btn-hover-bg: #a1a1a2!important;
+  --bs-btn-hover-bg: #a1a1a2 !important;
   --bs-btn-hover-border-color: transparent !important;
+  --bs-btn-active-bg: #4e6382;
+  --bs-btn-active-border-color: transparent !important;
 }
 
 
