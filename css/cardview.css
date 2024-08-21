@@ -113,7 +113,11 @@ background-color: transparent!important;
   --bs-btn-bg: #81262f!important;
   --bs-btn-border-color: transparent!important;
 }
-
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #717d8f!important;
+  --bs-btn-border-color: transparent!important;
+}
 
 /* ユーザー情報設定タブ　調整 */
 .mebory-ui-accordion {
