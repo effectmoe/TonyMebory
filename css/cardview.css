@@ -120,7 +120,7 @@
   --bs-btn-border-color: transparent !important;
 }
 
-.btn-primar#update-user-info-settings {
+.btn-primar {
   --bs-btn-color: #fff !important;
   --bs-btn-bg: #7f8286 !important;
   --bs-btn-border-color: transparent !important;
