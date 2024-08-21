@@ -86,3 +86,21 @@
 .mebory-ui-accordion.active::after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+
+/* meboryボタン色変更 */
+.btn-primary#get-code {
+  --bs-btn-color: #fff!important;
+  --bs-btn-bg: #938A7C!important;
+  --bs-btn-border-color: transparent!important;
+}
+.btn-primary#reload {
+  --bs-btn-color: #fff!important;
+  --bs-btn-bg: #7a7266!important;
+  --bs-btn-border-color: transparent!important;
+}
+.btn-danger {
+  --bs-btn-color: #fff!important;
+  --bs-btn-bg: #81262f!important;
+  --bs-btn-border-color: transparent!important;
+}
