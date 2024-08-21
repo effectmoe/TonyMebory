@@ -104,3 +104,9 @@
   --bs-btn-bg: #81262f!important;
   --bs-btn-border-color: transparent!important;
 }
+
+
+/* ユーザー情報設定タブ　調整 */
+.mebory-ui-accordion {
+  margin-bottom: 20px;
+}
